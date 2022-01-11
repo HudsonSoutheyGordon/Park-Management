@@ -1,0 +1,204 @@
+# Note check the URLs because I had to change them due to not being able to access flip3
+
+### Retrieve Parks
+GET http://flip3.engr.oregonstate.edu:5111/parks HTTP/1.1
+
+### Create a park
+POST http://flip3.engr.oregonstate.edu:5111/parks HTTP/1.1
+content-type: application/json
+
+{
+    "parkName": "testparkB",
+    "borough": "Toronto",
+    "squareMeterage": 200
+}
+
+### Retrieve Parks
+GET http://flip3.engr.oregonstate.edu:5111/parks HTTP/1.1
+
+### Delete Park testParkB
+DELETE http://flip3.engr.oregonstate.edu:5111/parks HTTP/1.1
+content-type: application/json
+
+{
+    "parkID": 6
+}
+
+### Edit a park
+PUT http://flip3.engr.oregonstate.edu:5111/parks HTTP/1.1
+content-type: application/json
+
+{
+    "parkName": "updatedParkA",
+    "borough": "Scarborough",
+    "squareMeterage": 125,
+    "parkID":4
+}
+
+### Retrieve Employees
+GET http://flip3.engr.oregonstate.edu:5111/employees HTTP/1.1
+
+### Create an Employee
+POST http://flip3.engr.oregonstate.edu:5111/employees HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "testEmployeeA",
+    "lastName": "FakeLastName",
+    "email": "fake@email.com",
+    "phoneNumber": 4165556040,
+    "jobTitle": "big boss",
+    "hourlyRate": 20
+}
+
+### Retrieve Employees
+GET http://flip3.engr.oregonstate.edu:5111/employees HTTP/1.1
+
+### Delete Employees testEMployeeA
+DELETE http://flip3.engr.oregonstate.edu:5111/employees HTTP/1.1
+content-type: application/json
+
+{
+    "employeeID": 4
+}
+
+### Edit an employee
+PUT http://flip3.engr.oregonstate.edu:5111/employees HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Mark",
+    "lastName": "McDougal",
+    "email": "bigMark@gmail.com",
+    "phoneNumber": 4165551122,
+    "jobTitle": "Flower Specialist",
+    "employeeID": 6
+}
+
+### FILTER MaintenanceEquipment
+GET http://flip3.engr.oregonstate.edu:5111/maintenanceequipment HTTP/1.1
+content-type: application/json
+
+{
+    "equipmentType": "Lawn Mower",
+    "storageLocation": 1
+}
+
+### Retrieve MaintenanceEquipment
+GET http://flip3.engr.oregonstate.edu:5114/maintenanceequipment HTTP/1.1
+
+### Create an MaintenanceEquipment
+POST http://flip3.engr.oregonstate.edu:5111/maintenanceequipment HTTP/1.1
+content-type: application/json
+
+{
+    "equipmentType": "testEquipmentA",
+    "datePurchased": "2020-08-15",
+    "storageLocation": 1
+}
+
+### Delete Park testParkB
+DELETE http://flip3.engr.oregonstate.edu:5114/maintenanceequipment/9 HTTP/1.1
+
+
+
+### Edit an equipment
+PUT http://flip3.engr.oregonstate.edu:5111/maintenanceEquipment HTTP/1.1
+content-type: application/json
+
+{
+    "equipmentType": "LawnMower",
+    "datePurchased": "2020-01-09",
+    "storageLocation": 2,
+    "equipmentID": 5
+}
+
+
+### Retrieve MaintenanceEquipment
+GET http://flip3.engr.oregonstate.edu:5111/maintenanceequipment HTTP/1.1
+
+### Retrieve ParkFacilities
+GET http://flip3.engr.oregonstate.edu:5111/parkfacilities HTTP/1.1
+
+### Create an ParkFacilities
+POST http://flip3.engr.oregonstate.edu:5111/parkfacilities HTTP/1.1
+content-type: application/json
+
+{
+    "facilityType": "Bench",
+    "facilityLocation": 1,
+    "maintenanceStatus": 0,
+    "monthlyCost": 10
+}
+
+### Retrieve ParkFacilities
+GET http://flip3.engr.oregonstate.edu:5111/parkfacilities HTTP/1.1
+
+### Delete Park testParkB
+DELETE http://flip3.engr.oregonstate.edu:5111/parkfacilities HTTP/1.1
+content-type: application/json
+
+{
+    "facilityID": 4
+}
+
+### Edit an parkFacility
+PUT http://flip3.engr.oregonstate.edu:5111/parkfacilities HTTP/1.1
+content-type: application/json
+
+{
+    "facilityType": "Water Fountain",
+    "facilityLocation": 2,
+    "maintenanceStatus": 0,
+    "monthlyCost": 15,
+    "facilityID": 5
+}
+
+
+### Retrieve Parks_Employees
+GET http://flip3.engr.oregonstate.edu:5111/parks_employees HTTP/1.1
+
+### Create an Parks_Employees
+POST http://flip3.engr.oregonstate.edu:5111/parks_employees HTTP/1.1
+content-type: application/json
+
+{
+    "parkID": 1,
+    "employeeID": 1
+}
+
+### Retrieve Parks_Employees
+GET http://flip3.engr.oregonstate.edu:5111/parks_employees HTTP/1.1
+
+### Delete Park testParkB
+DELETE http://flip3.engr.oregonstate.edu:5111/parks_employees HTTP/1.1
+content-type: application/json
+
+{
+    "parkID": 1,
+    "employeeID": 1 
+}
+
+### Retrieve Equipment_Employees
+GET http://flip3.engr.oregonstate.edu:5111/equipment_employees HTTP/1.1
+
+### Create an Equipment_Employees
+POST http://flip3.engr.oregonstate.edu:5111/equipment_employees HTTP/1.1
+content-type: application/json
+
+{
+    "equipmentID": 1,
+    "employeeID": 1
+}
+
+### Retrieve Equipment_Employees
+GET http://flip3.engr.oregonstate.edu:5111/equipment_employees HTTP/1.1
+
+### Delete Park testParkB
+DELETE http://flip3.engr.oregonstate.edu:5111/equipment_employees HTTP/1.1
+content-type: application/json
+
+{
+    "equipmentID": 1,
+    "employeeID": 1
+}

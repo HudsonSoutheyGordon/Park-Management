@@ -1,0 +1,27 @@
+{
+  "name": "parkman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon controller.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/hudsonsoutheygordon/parkmanagement.git"
+  },
+  "author": "hudson southey-gordon, matt rost",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hudsonsoutheygordon/parkmanagement/issues"
+  },
+  "homepage": "https://github.com/hudsonsoutheygordon/parkmanagement#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "forever": "^4.0.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
+  }
+}
