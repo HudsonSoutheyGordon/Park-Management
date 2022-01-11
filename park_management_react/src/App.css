@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #836a4d ;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #FFFFFF;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr {
+  color: black;
+}
+
+tr:nth-child(even){background-color: #ccd5ae;}
+tr:nth-child(odd){background-color: #e9edc9;}
+
+tr:hover {background-color: #576138;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #576138;
+  color: white;
+}
+
+fieldset {
+  outline:none;
+}
+
+/*
+* Citation: 
+* The following nav classes have been sourced from: https://stackoverflow.com/questions/50166035/how-to-implement-navbar-using-react
+*/
+#nav {
+	width: 80%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none; }
+#nav li {
+	float: left; }
+
+#nav li a {
+		display: block;
+		padding: 8px 15px;
+		text-decoration: none;
+		font-weight: bold;
+		color: #FFFFFF;
+		border-right: 1px solid #b6987f; }
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  border: 2px solid #987d7c;
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
